@@ -1,9 +1,11 @@
 import Navbar from "../../components/navbar";
+import Title from "../../components/title";
+
 export default function Posts() {
   return (
     <div>
       <Navbar />
-      <h1>Post Page</h1>
+      <Title>Post Page</Title>
     </div>
   );
 }

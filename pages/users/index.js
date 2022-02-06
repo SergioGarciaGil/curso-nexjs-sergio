@@ -1,10 +1,11 @@
 import Navbar from "../../components/navbar";
+import Title from "../../components/title";
 
 export default function Users() {
   return (
     <div>
       <Navbar />
-      <h1>User Pages</h1>
+      <Title>User Pages</Title>
     </div>
   );
 }
