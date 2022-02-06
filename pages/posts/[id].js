@@ -1,14 +1,13 @@
 import { useRouter } from "next/router";
-import Navbar from "../../components/navbar";
+import Layout from "../../components/layout";
 import Title from "../../components/title";
 
 export default function Post() {
   const router = useRouter();
   return (
-    <div>
-      <Navbar />
+    <Layout>
       <Title>Post Details</Title>
       <p>Post ID: {router.query.id}</p>
-    </div>
+    </Layout>
   );
 }

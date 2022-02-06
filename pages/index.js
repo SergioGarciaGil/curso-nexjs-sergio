@@ -1,11 +1,10 @@
-import Navbar from "../components/navbar";
+import Layout from "../components/layout";
 import Title from "../components/title";
 export default function Home() {
   return (
-    <div>
-      <Navbar />
+    <Layout>
       <Title>Home Page</Title>
       <p>Aprendamos NextJS con sergio Garcia</p>
-    </div>
+    </Layout>
   );
 }
