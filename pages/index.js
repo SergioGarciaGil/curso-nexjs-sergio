@@ -5,6 +5,16 @@ export default function Home() {
     <Layout>
       <Title>Home Page</Title>
       <p>Aprendamos NextJS con sergio Garcia</p>
+      <style>
+        {`
+        p {
+          color: darkGray;
+        }
+        p:hover{
+          color:darkred;
+        }
+        `}
+      </style>
     </Layout>
   );
 }
