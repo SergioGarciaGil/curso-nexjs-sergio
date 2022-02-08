@@ -1,22 +1,21 @@
 import Title from "../../components/title";
 import Layout from "../../components/layout";
 import Link from "next/link";
-import React from "react";
 
 // CLIENTE SIDE RENDERIN..
 
-// export default function Posts() {
-//   const [posts, setPosts] = React.useState([]);
+export default function Posts({ posts }) {
+  //   const [posts, setPosts] = React.useState([]);
 
-//   React.useEffect(() => {
-//     const fetchPosts = async () => {
-//       const res = await fetch("https://jsonplaceholder.typicode.com/posts");
-//       const newPosts = await res.json();
-//       setPosts(newPosts);
-//     };
+  //   React.useEffect(() => {
+  //     const fetchPosts = async () => {
+  //       const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  //       const newPosts = await res.json();
+  //       setPosts(newPosts);
+  //     };
 
-//     fetchPosts();
-//   }, []);
+  //     fetchPosts();
+  //   }, []);
 
   return (
     <Layout>
@@ -35,4 +34,14 @@ import React from "react";
       </div>
     </Layout>
   );
+}
+export async function getServerSideProps() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const posts = await res.json();
+
+  return {
+    props: {
+      posts,
+    },
+  };
 }
