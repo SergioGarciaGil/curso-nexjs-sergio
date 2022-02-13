@@ -6,7 +6,7 @@ export default function Post({ post }) {
   return (
     <Layout>
       <Head>
-        <title>Posts #{post.id}</title>
+        <title>Postss #{post.id}</title>
         <meta
           name="description"
           content="En este curso de webtutoriales aprenderas sobre Next JS"
