@@ -1,5 +1,5 @@
 import Layout from "../../components/layout";
-import Head from "next/Head.js";
+import Head from "next/head";
 import Title from "../../components/title";
 
 export default function Post({ post }) {

@@ -1,5 +1,5 @@
 import Title from "../../components/title";
-import Head from "next/Head";
+import Head from "next/head";
 import Layout from "../../components/layout";
 import Link from "next/link";
 
