@@ -7,7 +7,7 @@ export default function Users({ users }) {
   return (
     <Layout>
       <Head>
-        <title>Landing pages de Users</title>
+        <title>Landing pages de Users.</title>
         <meta
           name="description"
           content="En este curso de webtutoriales aprenderas sobre Next JS"
