@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import Head from "next/Head.js";
+import Head from "next/head";
 import Layout from "../../components/layout";
 import Title from "../../components/title";
 
