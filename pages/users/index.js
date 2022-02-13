@@ -1,16 +1,24 @@
 import Title from "../../components/title";
+import Head from "next/Head";
 import Layout from "../../components/layout";
 import Link from "next/link";
 
 export default function Users({ users }) {
   return (
     <Layout>
+      <Head>
+        <title>Landing pages de Users</title>
+        <meta
+          name="description"
+          content="En este curso de webtutoriales aprenderas sobre Next JS"
+        />
+      </Head>
       <Title>User Pages</Title>
       <div className="grid">
         {users.map((user) => {
           return (
-            <Link href={"users/[id]"} as={`/users/${user.id}`}>
-              <a className="card" key={user.id}>
+            <Link key={"user.id"} href={"users/[id]"} as={`/users/${user.id}`}>
+              <a className="card">
                 <h3>User</h3>
                 <p>Name:{user.name}</p>
                 <p>Email: {user.email}</p>

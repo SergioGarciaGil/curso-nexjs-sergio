@@ -1,4 +1,5 @@
 import Title from "../../components/title";
+import Head from "next/Head";
 import Layout from "../../components/layout";
 import Link from "next/link";
 
@@ -19,6 +20,13 @@ export default function Posts({ posts }) {
 
   return (
     <Layout>
+      <Head>
+        <title>Landing pages de Posts</title>
+        <meta
+          name="description"
+          content="En este curso de webtutoriales aprenderas sobre Next JS"
+        />
+      </Head>
       <Title>Posts Page</Title>
       <div className="grid">
         {posts.map((post) => {

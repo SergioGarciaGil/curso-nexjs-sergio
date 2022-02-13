@@ -1,9 +1,17 @@
 import Layout from "../../components/layout";
+import Head from "next/Head";
 import Title from "../../components/title";
 
 export default function Post({ post }) {
   return (
     <Layout>
+      <Head>
+        <title>Posts #{post.id}</title>
+        <meta
+          name="description"
+          content="En este curso de webtutoriales aprenderas sobre Next JS"
+        />
+      </Head>
       <Title>Post Details</Title>
       <div className="card1" id="grid1">
         <h2>{post.title}</h2>
